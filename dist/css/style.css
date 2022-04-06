@@ -1,0 +1,10 @@
+.page {
+  background-color: white;
+}
+
+.game {
+  display: none;
+}
+.game.active {
+  display: block;
+}
