@@ -1,8 +1,113 @@
-.page
-  background-color: white
+$subMain: #e5e5e5
+$dark: #141414
+$middle: #8c8c8c
 
-.game
-  display: none
+html
+  font-family: "Calibri Light"
 
-  &.active
-    display: block
+body
+  margin: 0
+  background-color: $subMain
+
+header
+
+  #banner
+    height: 300px
+    width: 100%
+    background-image: url(/images/banner.webp)
+    background-position: center center
+    background-size: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    #name
+      padding: 4% 6%
+      border-radius: 10px
+      font-size: 25px
+      background-color: $subMain
+      opacity: 0.7
+
+
+
+main
+  display: flex
+  justify-content: space-between
+  flex-flow: row nowrap
+  flex: 0 1
+
+  .nav
+    margin: 1%
+    padding: 1%
+    flex-basis: 20%
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+    border-radius: 10px
+    background-color: $dark
+
+    h3
+      font-size: 40px
+      color: $subMain
+      width: fit-content
+      padding: 5%
+      text-align: center
+
+    &-games
+      display: flex
+      flex-flow: column nowrap
+      align-items: center
+
+      .gameLink
+        font-size: 20px
+        width: 100%
+        background-color: $middle
+        border-radius: 10px
+        padding: 5%
+        text-align: center
+
+
+  .games
+    flex: 1 0
+    background-color: aqua
+
+    .game
+      display: none
+      width: 100%
+      height: 100%
+
+      &.active
+        display: block
+
+    .BJ
+      position: relative
+      width: 100%
+      display: flex
+      flex-flow: column nowrap
+      align-items: center
+
+      &-score
+        margin: 5%
+        width: 90%
+        display: flex
+        justify-content: space-between
+
+      &-playerCards
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+
+        .card
+          padding: 20px
+          margin: 30px
+          background-color: $dark
+          color: $subMain
+          border-radius: 10px
+
+
+
+
+
+
+
+footer

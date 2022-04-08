@@ -7,11 +7,15 @@
 </head>
 <body>
 
-    <header></header>
+    <header>
+        <div id="banner">
+            <div id="name">Hack Casino</div>
+        </div>
+    </header>
 
     <main>
         <nav class="nav">
-            <h3></h3>
+            <h3>Games</h3>
             <div class="nav-games">
                 <div class=" nav-games-BJ gameLink">Black Jack</div>
             </div>
@@ -19,14 +23,26 @@
         <section class="games">
 
             <div class="game BJ">
-                <div class="BJ-scoreR">Счет оппонента:</div>
 
-                <div class="BJ-actions">
-                    <button class="BJ-actions-add">Взять карту</button>
-                    <button class="BJ-actions-finish">Закончить</button>
+                <div class="BJ-score">
+                    <div class="BJ-score-R">Robot score: 0</div>
+                    <div class="BJ-score-P">Your score: 0</div>
                 </div>
 
-                <div class="BJ-scoreP">Ваш счет:</div>
+
+
+                <div class="BJ-result">
+                    <h3 class="BJ-result-txt">Result:</h3>
+                    <button class="BJ-result-restart">restart</button>
+                </div>
+
+                <div class="BJ-actions">
+                    <button class="BJ-actions-add">Take a card</button>
+                    <button class="BJ-actions-finish">End</button>
+                </div>
+
+                <div class="BJ-playerCards"></div>
+
             </div>
 
         </section>
