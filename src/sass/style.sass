@@ -10,9 +10,8 @@ body
   background-color: $subMain
 
 header
-
   #banner
-    height: 300px
+    height: 40vh
     width: 100%
     background-image: url(/images/banner.webp)
     background-position: center center
@@ -37,13 +36,12 @@ main
   flex: 0 1
 
   .nav
-    margin: 1%
     padding: 1%
+    height: 60vh
     flex-basis: 20%
     display: flex
     flex-flow: column nowrap
     align-items: center
-    border-radius: 10px
     background-color: $dark
 
     h3
@@ -64,12 +62,13 @@ main
         background-color: $middle
         border-radius: 10px
         padding: 5%
+        margin: 0 0 20%
         text-align: center
+        cursor: pointer
 
 
   .games
     flex: 1 0
-    background-color: aqua
 
     .game
       display: none
@@ -77,32 +76,96 @@ main
       height: 100%
 
       &.active
-        display: block
+        display: flex
 
     .BJ
       position: relative
       width: 100%
-      display: flex
       flex-flow: column nowrap
       align-items: center
 
       &-score
-        margin: 5%
+        margin: 1% 5%
         width: 90%
         display: flex
         justify-content: space-between
 
-      &-playerCards
+      &-result
         display: flex
+        flex-flow: column nowrap
+        align-items: center
+
+      &-robotCards
+        display: flex
+        flex-flow: row wrap
         justify-content: space-evenly
         align-items: center
 
-        .card
-          padding: 20px
-          margin: 30px
-          background-color: $dark
-          color: $subMain
-          border-radius: 10px
+      &-playerCards
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-evenly
+        align-items: center
+
+      .card
+        padding: 20px
+        margin: 30px
+        background-color: $dark
+        color: $subMain
+        border-radius: 10px
+
+    .bones
+      position: relative
+      width: 100%
+      flex-flow: column nowrap
+      align-items: center
+
+      &-robotBones
+        width: 70%
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-evenly
+
+      &-playerBones
+        width: 70%
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-evenly
+
+      .bone
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 20px
+        height: 20px
+        margin: 3%
+        background-color: $middle
+        padding: 10px
+        border-radius: 3px
+
+      &-score
+        margin: 1% 5%
+        width: 90%
+        display: flex
+        justify-content: space-between
+
+      &-actions
+        width: 50%
+        display: flex
+        flex-flow: column nowrap
+
+        input
+          width: 50%
+
+        *
+          margin: 1%
+
+      &-result
+        display: flex
+        flex-flow: column nowrap
+        align-items: center
+
+
 
 
 

@@ -18,6 +18,7 @@
             <h3>Games</h3>
             <div class="nav-games">
                 <div class=" nav-games-BJ gameLink">Black Jack</div>
+                <div class="nav-games-bones gameLink">Bones</div>
             </div>
         </nav>
         <section class="games">
@@ -26,15 +27,14 @@
 
                 <div class="BJ-score">
                     <div class="BJ-score-R">Robot score: 0</div>
+                    <div class="BJ-score-result">
+                        <h3 class="BJ-score-result-txt">Result:</h3>
+                        <button class="BJ-score-result-restart">restart</button>
+                    </div>
                     <div class="BJ-score-P">Your score: 0</div>
                 </div>
 
-
-
-                <div class="BJ-result">
-                    <h3 class="BJ-result-txt">Result:</h3>
-                    <button class="BJ-result-restart">restart</button>
-                </div>
+                <div class="BJ-robotCards"></div>
 
                 <div class="BJ-actions">
                     <button class="BJ-actions-add">Take a card</button>
@@ -45,6 +45,34 @@
 
             </div>
 
+            <div class="game bones">
+                <div class="bones-score">
+                    <div class="bones-score-R">Robot score: 0</div>
+                    <div class="bones-score-result">
+                        <h3 class="bones-score-result-txt">Result:</h3>
+                        <button class="bones-score-result-restart">restart</button>
+                    </div>
+                    <div class="bones-score-P">Your score: 0</div>
+                </div>
+
+                <div class="bones-robotBones"></div>
+
+                <div class="bones-actions">
+
+                    <label>
+                        <input class="bones-actions-repeates" placeholder="input bones count" value="2">
+                        </input>
+                        input bones count
+                    </label>
+
+
+                    <button class="bones-actions-throw">Throw</button>
+
+                    <button class="bones-actions-finish">End</button>
+                </div>
+
+                <div class="bones-playerBones"></div>
+            </div>
         </section>
     </main>
 
